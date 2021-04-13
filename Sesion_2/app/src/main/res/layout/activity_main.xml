@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="688dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/idTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTitulo"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/idNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/txtNombre"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/idApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/txtApellido"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/idPension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/txtSueldo"
+            android:padding="20dp"/>
+
+        <Spinner
+            android:id="@+id/idCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/txtCarrera"/>
+
+        <Button
+            android:id="@+id/idEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtregistra" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

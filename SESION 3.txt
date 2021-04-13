@@ -1,0 +1,72 @@
+***************************************conecction de notas *****************************
+ackage com.cibertec.semana03_lunes.util;
+
+import retrofit2.Retrofit;
+
+import retrofit2.converter.gson.GsonConverterFactory;
+
+
+
+public class ConnectionRest {
+
+
+
+    public static Retrofit retrofit;
+
+    public static final String URL = "jsonplaceholder.typicode.com";
+
+
+
+    public static Retrofit getConnection(){
+
+        if (retrofit == null){
+
+                retrofit = new Retrofit.Builder().baseUrl(URL).addConverterFactory(GsonConverterFactory.create()).build();
+
+        }
+
+        return retrofit;
+
+    }
+
+
+
+}
+
+***************************WEB API**************************** 
+
+package com.cibertec.semana03_lunes.api;
+
+
+
+import com.cibertec.semana03_lunes.entity.User;
+
+
+
+import java.util.List;
+
+
+
+import retrofit2.Call;
+
+import retrofit2.http.GET;
+
+
+
+public interface ServiceApi {
+
+
+
+    // jsonplaceholder.typicode.com/users
+
+
+
+    @GET("users")
+
+    public abstract Call<List<User>>  listaUsuario();
+
+
+
+
+
+}

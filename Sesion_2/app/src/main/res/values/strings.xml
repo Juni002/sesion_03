@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sesion_2</string>
+    <string name="txtTitulo">Registro de Alumno</string>
+    <string name="txtNombre">Ingrese Nombre</string>
+    <string name="txtApellido">Ingrese Apellido</string>
+    <string name="txtSueldo">Ingrese Pension</string>
+    <string name="txtregistra">Registra</string>
+
+    <string-array name="txtCarrera">
+        <item>[Ingrese Carrera]</item>
+        <item>Redes</item>
+        <item>Informática</item>
+        <item>Mecánica</item>
+    </string-array>
+</resources>
